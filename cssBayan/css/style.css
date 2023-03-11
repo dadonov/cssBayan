@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Poppins;
+  src: url("https://fonts.googleapis.com/css?family=Poppins:regular,700");
+}
+
+body {
+  font-size: 20px;
+  font-family: Poppins;
+  text-transform: uppercase;
+  color: white;
+}
