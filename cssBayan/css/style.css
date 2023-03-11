@@ -9,3 +9,68 @@ body {
   text-transform: uppercase;
   color: white;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.meme_container {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  width: 70%;
+}
+
+.meme_tab_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 15px 100px;
+  border-top: 1px solid white;
+  background-color: black;
+}
+
+.meme_tab_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.meme1,
+.meme2,
+.meme3,
+.meme4,
+.meme5 {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 500ms ease;
+}
+.meme1 {
+  background-image: url(/assets/meme1.png);
+}
+
+.meme2 {
+  background-image: url(/assets/meme2.png);
+}
+.meme3 {
+  background-image: url(/assets/meme3.png);
+}
+.meme4 {
+  background-image: url(/assets/meme4.png);
+}
+.meme5 {
+  background-image: url(/assets/meme5.png);
+}
+.meme_radio {
+  visibility: hidden;
+}
+.meme_radio_label {
+  cursor: pointer;
+}
