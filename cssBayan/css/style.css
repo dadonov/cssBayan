@@ -97,10 +97,6 @@ body {
   opacity: 0.7;
   transition: 500ms ease;
 }
-/*doesn't work, need to solve the problem asap*/
-.meme_radio_label:active > .meme_tab_title > p {
-  color: white;
-}
 
 .chevron {
   filter: brightness(50);
@@ -114,13 +110,17 @@ body {
     transition: 500ms ease;
   }
 
+  .meme_radio_label:hover .chevron {
+    transition: 500ms ease;
+    transform: rotate(180deg);
+  }
+
   .meme_radio_label:hover > .meme_tab_content > .meme_img {
     width: 26.042vw;
     height: 26.042vw;
     opacity: 1;
     transition: 500ms ease;
   }
-
   .meme_radio_label:has(.meme_radio:checked) .meme_container:has(.meme_radio_label:hover) p {
     transition: 500ms ease;
     color: white;
@@ -137,6 +137,78 @@ body {
   }
 }
 @media (max-width: 480px) {
+  body {
+    font-size: 4.042vw;
+    background-color: black;
+  }
+  .top {
+    border-top: 0;
+  }
+
+  .meme_container {
+    padding: 0;
+    width: 100%;
+  }
+  .meme_tab_title {
+    padding: 0.781vw 5.208vw;
+    padding-top: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .meme_radio_label:hover > .meme_tab_content > .meme_img {
+    width: 60.042vw;
+    height: 60.042vw;
+  }
+
+  .meme_radio_label:has(.meme_radio:checked) > .meme_tab_content > .meme_img {
+    width: 60.042vw;
+    height: 60.042vw;
+  }
+
+  .chevron {
+    width: 5.2vw;
+    height: 5.2vw;
+    opacity: 1;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 3.042vw;
+    background-color: black;
+  }
+  .top {
+    border-top: 0;
+  }
+
+  .meme_container {
+    padding: 0;
+    width: 100%;
+  }
+  .meme_tab_title {
+    padding: 0.781vw 5.208vw;
+    padding-top: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .meme_radio_label:hover > .meme_tab_content > .meme_img {
+    width: 60.042vw;
+    height: 60.042vw;
+  }
+
+  .meme_radio_label:has(.meme_radio:checked) > .meme_tab_content > .meme_img {
+    width: 60.042vw;
+    height: 60.042vw;
+  }
+
+  .chevron {
+    width: 5.2vw;
+    height: 5.2vw;
+    opacity: 1;
+  }
+}
+@media (max-width: 1024px) {
   body {
     font-size: 3.042vw;
     background-color: black;
